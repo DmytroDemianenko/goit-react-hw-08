@@ -1,0 +1,15 @@
+.navContact {
+  display: flex;
+  gap: 20px;
+}
+.link {
+  color: rgb(26, 182, 213);
+  font-size: 18px;
+  transition: all ease 0.3s;
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+.active {
+  color: rgb(30, 198, 89);
+}

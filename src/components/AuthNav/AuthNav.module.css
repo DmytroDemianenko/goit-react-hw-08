@@ -1,0 +1,13 @@
+.navRegist {
+  display: flex;
+  gap: 12px;
+}
+.link {
+  color: rgb(68, 7, 146);
+  font-weight: 400;
+  padding: 6px;
+  transition: all ease 0.3s;
+  &:hover {
+    transform: scale(1.07);
+  }
+}
