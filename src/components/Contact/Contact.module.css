@@ -1,0 +1,24 @@
+.name {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 0;
+}
+
+.contact {
+  border: 2px solid black;
+  background-color: rgb(209, 207, 207);
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.svg {
+  font-size: 20px;
+  color: rgb(9, 6, 6);
+  padding-right: 5px;
+}

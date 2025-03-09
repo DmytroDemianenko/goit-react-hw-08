@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.pageTitle {
+  color: rgb(9, 6, 6);
+  font-size: bold;
+}
