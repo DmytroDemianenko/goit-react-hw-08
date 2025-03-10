@@ -3,7 +3,7 @@ import { selectIsLoggedIn, selectUser } from "../../redux/auth/selectors";
 import Navigation from "../Navigation/Navigation";
 import UserMenu from "../UserMenu/UserMenu";
 import AuthNav from "../AuthNav/AuthNav";
-
+import s from "./AppBar.module.css";
 const AppBar = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const user = useSelector(selectUser);

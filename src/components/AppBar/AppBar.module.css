@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, rgba(9, 155, 157, 0.596), rgb(1, 76, 78));
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+h4 {
+  color: orange;
+  transition: all ease 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
