@@ -56,13 +56,11 @@ export const refreshUser = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const savedToken = thunkAPI.getState().auth.token;
-      console.log(savedToken);
       if (savedToken === null) {
         return thunkAPI.rejectWithValue("Token is not exist!");
       }
-
       setAuthHeader(savedToken);
-      const { data } = await api.get("/users/me");
+      const { data } = await api.get("/users/current");
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
