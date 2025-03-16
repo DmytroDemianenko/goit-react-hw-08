@@ -12,13 +12,13 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleSubmit = (values, options) => {
-    dispatch(loginThunk(values));
-    // .unwrap()
-    // .then((res) => {
-    //   toast.success(`Welcome, ${res.user.email}`);
-    //   navigate("/contacts", { replace: true });
-    // })
-    // .catch(() => toast.error("Invalid data"));
+    dispatch(loginThunk(values))
+      .unwrap()
+      .then((res) => {
+        toast.success(`Welcome, ${res.user.email}`);
+        navigate("/contacts", { replace: true });
+      })
+      .catch(() => toast.error("Invalid data"));
 
     options.resetForm();
   };

@@ -22,7 +22,7 @@ function App() {
   return isRefreshing ? null : (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/home" element={<Home />} />
+        <Route index="home" element={<Home />} />
         <Route
           path="/contacts"
           element={
